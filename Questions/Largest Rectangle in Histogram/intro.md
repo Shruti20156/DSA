@@ -1,24 +1,20 @@
 # Largest Rectangle in Histogram
 
-🔗 [LeetCode](https://leetcode.com/problems/largest-rectangle-in-histogram/)
-
-## Problem
-
-Given an array of integers `heights` representing the histogram's bar heights,
-where the width of each bar is `1`, return the area of the largest rectangle
-in the histogram.
-
-## Example
-
-Input:
-[2,1,5,6,2,3]
-
-Output:
-10
+🔗 [LeetCode - Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/)
 
 ## Approach
 
-Use a Stack to find the previous smaller and next smaller elements.
+1. Find Next Smaller Element to Right (NSR).
+2. Find Next Smaller Element to Left (NSL).
+3. Calculate the width of the rectangle:
+   
+   `width = NSR - NSL - 1`
+
+4. Calculate area:
+   
+   `area = height × width`
+
+5. Keep the maximum area.
 
 ## Data Structure
 
@@ -32,4 +28,6 @@ O(n)
 
 O(n)
 
+## Status
 
+Solved
