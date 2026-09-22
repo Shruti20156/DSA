@@ -32,6 +32,4 @@ O(n)
 
 O(n)
 
-## Status
 
-Attempted
